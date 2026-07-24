@@ -1,0 +1,26 @@
+transaction_id,region,product_category,sales_amount,units_sold,transaction_date,customer_segment
+TXN-001,NCR,Electronics,150000.50,12,2024-01-15,Enterprise
+TXN-002,  Region IV-A  ,electronics,89000,8,2024-01-16,SME
+TXN-003,NCR,Home Appliances,N/A,5,2024-01-17,Enterprise
+TXN-004,Region III,ELECTRONICS,230000.75,20,2024-01-18,enterprise
+TXN-005,Region IV-A,Home appliances,,3,2024-01-19,SME
+TXN-006,NCR,Electronics,150000.50,12,2024-01-15,Enterprise
+TXN-007,Region VII,Food & Beverage,45000,NULL,2024-01-20,Retail
+TXN-008,  ncr  ,electronics,78000,6,2024-01-21,retail
+TXN-009,Region III,Food & Beverage,62000.25,15,2024-01-22,SME
+TXN-010,,Electronics,95000,10,2024-01-23,Enterprise
+TXN-011,Region VII,Home Appliances,110000,7,2024-01-24,Retail
+TXN-012,Region IV-A,Food & beverage,53000.80,9,2024-01-25,sme
+TXN-013,NCR,Electronics,N/A,4,2024-01-26,Enterprise
+TXN-014,Region III,Home Appliances,175000,14,2024-01-27,SME
+TXN-015,Region VII,Electronics,320000,25,2024-01-28,Enterprise
+TXN-016,NCR,Food & Beverage,41000,NULL,2024-01-29,Retail
+TXN-017,  Region III  ,FOOD & BEVERAGE,58000,11,2024-01-30,sme
+TXN-018,Region IV-A,Electronics,99000.99,8,2024-01-31,Enterprise
+TXN-019,NCR,Home Appliances,135000,10,2024-02-01,SME
+TXN-020,Region VII,Food & Beverage,47000,6,2024-02-02,retail
+TXN-021,NCR,Electronics,150000.50,12,2024-01-15,Enterprise
+TXN-022,Region III,Electronics,215000,18,2024-02-03,Enterprise
+TXN-023,Region IV-A,,72000,5,2024-02-04,SME
+TXN-024,NCR,Home Appliances,160000,13,2024-02-05,Enterprise
+TXN-025,Region VII,Electronics,280000,22,2024-02-06,Retail

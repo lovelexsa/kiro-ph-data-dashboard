@@ -1,7 +1,26 @@
 {
+  "name": "kiro-ph-data-dashboard",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Philippine data dashboard with DuckDB-powered ingestion pipeline and Chart.js visualizations",
+  "scripts": {
+    "pipeline": "node src/pipeline/run-all.js",
+    "pipeline:assess": "node src/pipeline/01-assess.js",
+    "pipeline:clean": "node src/pipeline/02-clean.js",
+    "pipeline:export": "node src/pipeline/03-export.js",
+    "ingest": "node src/ingest.js",
+    "db:reset": "node -e \"import('./src/db.js').then(async({openDatabase,exec,closeDatabase})=>{const{db,con}=openDatabase();await exec(con,'DROP TABLE IF EXISTS population;');await exec(con,'DROP TABLE IF EXISTS gdp;');await closeDatabase(db);console.info('Tables dropped.')})\"",
+    "serve": "npx http-server public -p 3000 -c-1"
+  },
   "dependencies": {
     "@duckdb/duckdb-wasm": "^1.33.1-dev57.0",
     "chart.js": "^4.5.1",
     "duckdb": "^1.4.4"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "allowScripts": {
+    "duckdb@1.4.4": true
   }
 }
