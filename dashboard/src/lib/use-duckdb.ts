@@ -17,18 +17,15 @@
 import { useState, useEffect, useRef } from "react";
 import * as duckdb from "@duckdb/duckdb-wasm";
 
-// DuckDB-WASM bundle URLs (served from jsDelivr CDN for reliable static deployment)
-const DUCKDB_VERSION = "1.33.1-dev57.0";
-const CDN_BASE = `https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@${DUCKDB_VERSION}/dist`;
-
+// DuckDB-WASM bundle URLs (served locally from public/ to avoid CORS issues)
 const DUCKDB_BUNDLES: duckdb.DuckDBBundles = {
   mvp: {
-    mainModule: `${CDN_BASE}/duckdb-mvp.wasm`,
-    mainWorker: `${CDN_BASE}/duckdb-browser-mvp.worker.js`,
+    mainModule: "/duckdb-mvp.wasm",
+    mainWorker: "/duckdb-browser-mvp.worker.js",
   },
   eh: {
-    mainModule: `${CDN_BASE}/duckdb-eh.wasm`,
-    mainWorker: `${CDN_BASE}/duckdb-browser-eh.worker.js`,
+    mainModule: "/duckdb-eh.wasm",
+    mainWorker: "/duckdb-browser-eh.worker.js",
   },
 };
 
